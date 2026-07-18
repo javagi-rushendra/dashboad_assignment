@@ -1,0 +1,32 @@
+Report on Pattern Printing Program
+----------------------------------
+
+Approach:
+I divided the problem into three separate functions:
+1. print_square(size) - prints a square of asterisks using nested loops.
+2. print_triangle(height) - prints a right-angled triangle with numbers.
+3. print_pyramid(height) - prints a pyramid of asterisks using spaces and stars.
+
+Each function uses nested loops:
+- Outer loop controls rows.
+- Inner loop controls columns or characters in each row.
+
+Challenges:
+1. Aligning the pyramid correctly required careful handling of spaces.
+2. Ensuring numbers in the triangle reset correctly for each row.
+3. Making the program flexible for different input sizes.
+
+Solutions:
+- Used (height - i - 1) spaces before stars in the pyramid.
+- Printed numbers from 1 to i for each row in the triangle.
+- Tested with multiple sizes (3, 5, 7) to confirm correctness.
+
+Verification:
+I tested the program with different input sizes:
+- Square: size=3, 5, 7
+- Triangle: height=4, 6
+- Pyramid: height=3, 5, 7
+All outputs matched the expected patterns.
+
+Conclusion:
+The program is robust, modular, and well-documented. Each function can be reused independently, and the main block demonstrates correctness with sample inputs.
